@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>soullife store — Ofertas em Saúde & Energia</title>
+  <meta name="description" content="Ofertas e suplementos selecionados. Mitolyn e outros produtos com ofertas exclusivas."/>
+  <meta name="author" content="soullife store"/>
+  <link rel="icon" href="data:,">
+
+  <style>
+    :root{
+      --primary:#6a0dad;
+      --accent:#ff6600;
+      --bg:#f5f7fb;
+      --card:#ffffff;
+      --muted:#6b7280;
+      --maxw:1100px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,Arial,sans-serif;background:var(--bg);color:#111;}
+    header{background:linear-gradient(90deg,var(--primary),#4a0f7a);color:#fff;padding:18px 16px;}
+    .wrap{max-width:var(--maxw);margin:20px auto;padding:0 16px;}
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand h1{font-size:20px;margin:0;text-transform:lowercase}
+    .topbar{display:flex;justify-content:space-between;align-items:center;gap:12px}
+
+    .hero{
+      display:grid;
+      grid-template-columns:1fr 420px;
+      gap:24px;
+      align-items:center;
+      margin-top:24px;
+    }
+    .hero-left h2{margin:0;font-size:28px;color:#0f172a}
+    .lead{color:var(--muted);margin-top:8px}
+    .cta-row{display:flex;gap:12px;margin-top:18px}
+    .btn{background:var(--accent);color:#fff;padding:14px 18px;border-radius:10px;text-decoration:none;font-weight:700;display:inline-block}
+    .btn.secondary{background:#fff;color:var(--primary);border:2px solid var(--primary)}
+    .hero-card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 20px rgba(16,24,40,0.06)}
+    .product-image{width:100%;border-radius:10px;display:block}
+
+    /* products */
+    .products{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:24px}
+    .card{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 6px 18px rgba(16,24,40,0.05)}
+    .card h3{margin:0 0 8px 0;color:var(--primary)}
+    .price{font-weight:800;font-size:20px;color:#111;margin-top:8px}
+    .small{font-size:14px;color:var(--muted)}
+
+    /* blog */
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}
+    .blog-card{background:var(--card);padding:14px;border-radius:10px}
+
+    footer{margin-top:40px;padding:20px;text-align:center;color:var(--muted)}
+    nav a{color:white;text-decoration:none;margin-left:12px;font-weight:600}
+
+    /* modal */
+    .modal{position:fixed;inset:0;background:rgba(2,6,23,0.6);display:none;align-items:center;justify-content:center;padding:20px;z-index:60}
+    .modal .box{background:white;padding:18px;border-radius:10px;max-width:820px;width:100%;max-height:86vh;overflow:auto}
+    .close{background:#eee;border:none;padding:6px 8px;border-radius:8px;cursor:pointer}
+
+    /* responsive */
+    @media(max-width:900px){
+      .hero{grid-template-columns:1fr}
+      .products{grid-template-columns:1fr}
+      .grid-3{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="wrap topbar">
+    <div class="brand">
+      <!-- Logo simples (pode trocar) -->
+      <svg width="44" height="44" viewBox="0 0 24 24" fill="none" style="border-radius:8px;background:#fff;padding:6px">
+        <rect width="24" height="24" rx="6" fill="url(#g)"></rect>
+        <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#6a0dad"/><stop offset="1" stop-color="#4a0f7a"/></linearGradient></defs>
+      </svg>
+      <div>
+        <h1>soullife store</h1>
+        <div style="font-size:13px;color:#dfe7f5">Ofertas em saúde, energia e bem-estar</div>
+      </div>
+    </div>
+
+    <nav>
+      <a href="#produtos">Produtos</a>
+      <a href="#blog">Blog</a>
+      <a href="#" id="openAbout">Sobre</a>
+      <a href="#" id="openPrivacy">Privacidade</a>
+    </nav>
+  </div>
+</header>
+
+<section class="wrap">
+  <div class="hero">
+    <div class="hero-left">
+      <h2>Produtos que aumentam sua energia e bem-estar</h2>
+      <div class="lead">Testados por quem busca qualidade. Compre com segurança através do link oficial do fornecedor.</div>
+
+      <div class="cta-row">
+        <a class="btn" href="#produtos">Ver Ofertas</a>
+        <a class="btn secondary" href="#blog">Ler artigos</a>
+      </div>
+
+      <div style="margin-top:18px;font-size:14px;color:var(--muted)">
+        Promoção limitada. Use o botão abaixo para acessar a oferta oficial.
+      </div>
+
+      <div style="margin-top:12px">
+        <a class="btn" href="https://ad47f8oil4wnys17s-nkwjxd65.hop.clickbank.net" target="_blank">Comprar Mitolyn — Oferta Oficial</a>
+      </div>
+    </div>
+
+    <div class="hero-card">
+      <img class="product-image" src="https://mitolyn.com/assets/images/mitolyn.jpg" alt="Mitolyn Suplemento">
+      <h3 style="margin-top:12px">Mitolyn — Suporte para energia celular</h3>
+      <p class="small">Suplemento selecionado com garantia do fornecedor. Resultados variam por pessoa.</p>
+      <div style="display:flex;gap:8px;margin-top:12px;align-items:center">
+        <a class="btn" href="https://ad47f8oil4wnys17s-nkwjxd65.hop.clickbank.net" target="_blank">COMPRAR COM DESCONTO</a>
+        <div style="color:var(--muted);font-weight:700">Estoque limitado</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Produtos -->
+  <h2 id="produtos" style="margin-top:28px">Produtos em destaque</h2>
+  <div class="products" aria-live="polite">
+    <div class="card">
+      <h3>Mitolyn — Destaque</h3>
+      <img src="https://mitolyn.com/assets/images/mitolyn.jpg" alt="Mitolyn" style="width:100%;border-radius:8px">
+      <p class="small">Fórmula voltada ao suporte de energia celular e disposição.</p>
+      <div class="price">Oferta exclusiva</div>
+      <a class="btn" href="https://ad47f8oil4wnys17s-nkwjxd65.hop.clickbank.net" target="_blank">Comprar Mitolyn</a>
+    </div>
+
+    <div class="card">
+      <h3>Produto Extra (exemplo)</h3>
+      <img src="https://images.unsplash.com/photo-1506807803488-8eafc15323c1?w=1200" alt="Produto" style="width:100%;border-radius:8px">
+      <p class="small">Página pronta para adicionar qualquer outro produto afiliado.</p>
+      <div class="price">—</div>
+      <a class="btn" href="#" target="_blank">Ver oferta</a>
+    </div>
+  </div>
+
+  <!-- Blog -->
+  <h2 id="blog" style="margin-top:30px">Artigos & Conteúdo</h2>
+  <div class="grid-3">
+    <div class="blog-card">
+      <h4>5 Formas Naturais de Acelerar o Metabolismo</h4>
+      <p class="small">Água, proteína, sono e algumas estratégias que ajudam a manter a energia.</p>
+      <a href="#art1" class="small">Ler mais →</a>
+    </div>
+    <div class="blog-card">
+      <h4>Como Manter Energia o Dia Todo</h4>
+      <p class="small">Rotina simples, pausas estratégicas e alimentação que sustentam o dia.</p>
+      <a href="#art2" class="small">Ler mais →</a>
+    </div>
+    <div class="blog-card">
+      <h4>Mitolyn: Como Funciona?</h4>
+      <p class="small">Visão geral imparcial: suporte ao metabolismo e bem-estar — resultados variam.</p>
+      <a href="#art3" class="small">Ler mais →</a>
+    </div>
+  </div>
+
+  <!-- Artigos (detalhe simples em âncoras) -->
+  <article id="art1" style="margin-top:18px" class="card">
+    <h3>5 Formas Naturais de Acelerar o Metabolismo</h3>
+    <p>Abaixo algumas dicas práticas que podem ajudar a acelerar o metabolismo naturalmente...</p>
+    <p class="small">(Conteúdo completo já inserido no blog — você pode editar depois.)</p>
+  </article>
+
+  <article id="art2" style="margin-top:12px" class="card">
+    <h3>Como Manter Energia o Dia Todo</h3>
+    <p>Estratégias simples como pausas, refeições com proteína e hidratação adequada mantêm a energia.</p>
+  </article>
+
+  <article id="art3" style="margin-top:12px" class="card">
+    <h3>Mitolyn: Como Funciona?</h3>
+    <p>Mitolyn é um suplemento que muitos usam como suporte. Não substitui práticas médicas ou prescrições.</p>
+  </article>
+
+  <footer style="margin-top:28px" class="card">
+    <div style="display:flex;flex-direction:column;gap:8px;align-items:center">
+      <div class="small">© <span id="year"></span> soullife store — Todos os direitos reservados</div>
+      <div style="display:flex;gap:12px">
+        <a href="#" id="openPrivacy2" class="small">Política de Privacidade</a>
+        <a href="#" id="openTerms" class="small">Termos de Uso</a>
+      </div>
+    </div>
+  </footer>
+</section>
+
+<!-- Modal: About -->
+<div id="modalAbout" class="modal" role="dialog" aria-hidden="true">
+  <div class="box">
+    <div style="display:flex;justify-content:space-between;align-items:center">
+      <h3>Sobre a soullife store</h3>
+      <button class="close" data-close>Fechar</button>
+    </div>
+    <p>Somos uma loja de curadoria de produtos de bem-estar e saúde. Trabalhamos com afiliados e respeitamos as políticas dos fornecedores. Resultados variam por pessoa.</p>
+  </div>
+</div>
+
+<!-- Modal: Privacy -->
+<div id="modalPrivacy" class="modal" role="dialog" aria-hidden="true">
+  <div class="box">
+    <div style="display:flex;justify-content:space-between;align-items:center">
+      <h3>Política de Privacidade</h3>
+      <button class="close" data-close>Fechar</button>
+    </div>
+    <p>Coletamos apenas dados necessários (ex.: e-mail quando você se inscrever). Não vendemos seus dados. Utilizamos cookies para melhorar a experiência. Para anúncios utilizamos serviços de terceiros (ex.: Google Ads). Consulte sempre os termos do provedor de pagamentos e fornecedores.</p>
+    <p class="small"><em>Observação:</em> Para rodar anúncios no Google Ads, adicione política detalhada de cookies e informações de contato. Posso gerar um texto pronto para você colar.</p>
+  </div>
+</div>
+
+<!-- Modal: Terms -->
+<div id="modalTerms" class="modal" role="dialog" aria-hidden="true">
+  <div class="box">
+    <div style="display:flex;justify-content:space-between;align-items:center">
+      <h3>Termos de Uso</h3>
+      <button class="close" data-close>Fechar</button>
+    </div>
+    <p>Ao usar este site você concorda com nossos termos. Não garantimos resultados individuais. Produtos vendidos através de links de afiliados são de responsabilidade dos fornecedores. Consulte o site do fornecedor para informações completas.</p>
+  </div>
+</div>
+
+<!-- Pop-up de Oferta (aparece 3s após carregar) -->
+<div id="popup" style="position:fixed;right:18px;bottom:18px;background:white;padding:14px;border-radius:12px;box-shadow:0 10px 30px rgba(2,6,23,0.2);display:none;z-index:80">
+  <div style="font-weight:800">Desconto exclusivo</div>
+  <div style="color:var(--muted);font-size:13px;margin-top:6px">Aproveite a oferta oficial do Mitolyn agora.</div>
+  <div style="margin-top:10px;display:flex;gap:8px">
+    <a class="btn" href="https://ad47f8oil4wnys17s-nkwjxd65.hop.clickbank.net" target="_blank">Quero desconto</a>
+    <button class="close" id="closePopup" style="background:#eee;border:none;padding:8px;border-radius:8px;cursor:pointer">Fechar</button>
+  </div>
+</div>
+
+<script>
+  // ano no footer
+  document.getElementById('year').innerText = new Date().getFullYear();
+
+  // modals
+  function openModal(id){
+    document.getElementById(id).style.display='flex';
+    document.getElementById(id).setAttribute('aria-hidden','false');
+  }
+  function closeModal(id){
+    document.getElementById(id).style.display='none';
+    document.getElementById(id).setAttribute('aria-hidden','true');
+  }
+  document.querySelectorAll('[data-close]').forEach(b=>b.addEventListener('click',()=>{
+    b.closest('.modal').style.display='none';
+  }));
+  document.getElementById('openAbout').addEventListener('click',e=>{e.preventDefault();openModal('modalAbout')});
+  document.getElementById('openPrivacy').addEventListener('click',e=>{e.preventDefault();openModal('modalPrivacy')});
+  document.getElementById('openPrivacy2').addEventListener('click',e=>{e.preventDefault();openModal('modalPrivacy')});
+  document.getElementById('openTerms').addEventListener('click',e=>{e.preventDefault();openModal('modalTerms')});
+
+  // fechar click fora
+  document.querySelectorAll('.modal').forEach(m=>{
+    m.addEventListener('click', e=>{
+      if(e.target===m) closeModal(m.id);
+    });
+  });
+
+  // pop-up de oferta
+  window.addEventListener('load', ()=>{
+    setTimeout(()=>{document.getElementById('popup').style.display='block';},2000);
+  });
+  document.getElementById('closePopup').addEventListener('click', ()=>document.getElementById('popup').style.display='none');
+
+  // aviso: mantém linguagem neutra (sem promessa médica)
+</script>
+
+</body>
+</html>
